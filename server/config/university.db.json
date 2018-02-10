@@ -1,0 +1,493 @@
+{
+  	"sg":[
+		{
+			"name":"National University of Singapore",
+		 	"domain" : ["nus.edu.sg", "u.nus.edu", "u.duke.nus.edu", "u.yale-nus.edu.sg"]
+		},
+		{
+			"name":"Nanyang Technological University",
+			"domain":"e.ntu.edu.sg"
+		},
+		{
+			"name":"Singapore Management University",
+			"domain":["smu.edu.sg", "sis.smu.edu.sg", "law.smu.edu.sg", "business.smu.edu.sg", "accountancy.smu.edu.sg", 
+	"socsci.smu.edu.sg", "economics.smu.edu.sg"]
+		},
+		{
+			"name":"Singapore Institute of Management",
+			"domain":["mymail.sim.edu.sg", "unisim.edu.sg"]
+		},
+		{
+			"name":"Singapore University of Technology and Design",
+			"domain":["mymail.sutd.edu.sg", "sutd.edu.sg"]
+		},
+		{
+			"name":"Singapore Institute of Technology",
+			"domain":"sit.singaporetech.edu.sg"
+		},
+		{
+			"name":"Nanyang Polytechnic",
+			"domain":"mymail.nyp.edu.sg"
+		},
+		{
+			"name":"Singapore Polytechnic",
+			"domain":"ichat.sp.edu.sg"
+		},
+		{
+			"name":"Temasek Polytechnic",
+			"domain":"student.tp.edu.sg"
+		},
+		{
+			"name":"Ngee Ann Polytechnic",
+			"domain":"connect.np.edu.sg"
+		},
+		{
+			"name":"Republic Polytechnic",
+			"domain":"myrp.edu.sg"
+		},
+		{
+			"name":"Institute of Technical Education",
+			"domain":"connect.ite.edu.sg"
+		},
+		{
+			"name":"Nanyang Academy of Fine Arts",
+			"domain":"student.nafa.edu.sg"
+		},
+		{
+			"name":"LASALLE College of the Arts",
+			"domain":"mylasalle.sg"
+		}
+	],
+	"usa":[
+		{
+			"name":"Brown University (RI)",
+			"domain":"brown.edu"
+		},
+		{
+			"name":"California Institute of Technology (CA)",
+			"domain":"caltech.edu"
+		},
+		{
+			"name":"Columbia University (NY)",
+			"domain":"columbia.edu"
+		},
+		{
+			"name":"Cornell University (NY)",
+			"domain":"cornell.edu"
+		},
+		{
+			"name":"Duke University (NC)",
+			"domain":"duke.edu"
+		},
+		{
+			"name":"Harvard University (MA)",
+			"domain":"harvard.edu"
+		},
+		{
+			"name":"Johns Hopkins University (MD)",
+			"domain":"jhu.edu"
+		},
+		{
+			"name":"Massachusetts Institute of Technology",
+			"domain":"mit.edu"
+		},
+		{
+			"name":"New York University (NY)",
+			"domain":"nyu.edu"
+		},
+		{
+			"name":"Northwestern University (IL)",
+			"domain":"northwestern.edu"
+		},
+		{
+			"name":"Princeton University (NJ)",
+			"domain":"princeton.edu"
+		},
+		{
+			"name":"Stanford University (CA)",
+			"domain":"stanford.edu"
+		},
+		{
+			"name":"University of California–Berkeley (CA)",
+			"domain":"berkeley.edu"
+		},
+		{
+			"name":"University of California–Los Angeles (CA)",
+			"domain":"ucla.edu"
+		},
+		{
+			"name":"University of Chicago (IL)",
+			"domain":"uchicago.edu"
+		},
+		{
+			"name":"University of Illinois–Urbana-Champaign (IL)",
+			"domain":"illinois.edu"
+		},
+		{
+			"name":"University of Michigan (MI)",
+			"domain":"umich.edu"
+		},
+		{
+			"name":"University of Pennsylvania (PA)",
+			"domain":"upenn.edu"
+		},
+		{
+			"name":"University of Wisconsin–Madison (WI)",
+			"domain":"wisc.edu"
+		},
+		{
+			"name":"Yale University (CT)",
+			"domain":"yale.edu"
+		}
+	],
+	"aus":[
+		{
+			"name":"Australian Catholic University",
+			"domain":"acu.edu.au"
+		},
+		{
+			"name":"Australian National University ",
+			"domain":"anu.edu.au"
+		},
+		{
+			"name":"Bond University ",
+			"domain":"bond.edu.au"
+		},
+		{
+			"name":"Central Queensland University ",
+			"domain":"cqu.edu.au"
+		},
+		{
+			"name":"Charles Darwin University ",
+			"domain":"cdu.edu.au"
+		},
+		{
+			"name":"Charles Sturt University ",
+			"domain":"csu.edu.au"
+		},
+		{
+			"name":"Curtin University ",
+			"domain":"curtin.edu.au"
+		},
+		{
+			"name":"Deakin University ",
+			"domain":"deakin.edu.au"
+		},
+		{
+			"name":"Edith Cowan University ",
+			"domain":"ecu.edu.au"
+		},
+		{
+			"name":"Federation University ",
+			"domain":"federation.edu.au"
+		},
+		{
+			"name":"Flinders University ",
+			"domain":"flinders.edu.au"
+		},
+		{
+			"name":"Griffith University",
+			"domain":"griffith.edu.au"
+		},
+		{
+			"name":"La Trobe University",
+			"domain":"latrobe.edu.au"
+		},
+		{
+			"name":"Macquarie University",
+			"domain":"mq.edu.au"
+		},
+		{
+			"name":"Monash University ",
+			"domain":"monash.edu"
+		},
+		{
+			"name":"Murdoch University ",
+			"domain":"murdoch.edu.au"
+		},
+		{
+			"name":"Queensland University of Technology ",
+			"domain":"qut.edu.au"
+		},
+		{
+			"name":"Southern Cross University ",
+			"domain":"scu.edu.au"
+		},
+		{
+			"name":"Swinburne University of Technology ",
+			"domain":"swinburne.edu.au"
+		},
+		{
+			"name":"Torrens University ",
+			"domain":"torrens.edu.au"
+		},
+		{
+			"name":"University of Adelaide ",
+			"domain":"adelaide.edu.au"
+		},
+		{
+			"name":"University of Canberra ",
+			"domain":"canberra.edu.au"
+		},
+		{
+			"name":"University of Melbourne ",
+			"domain":"unimelb.edu.au"
+		},
+		{
+			"name":"University of New England ",
+			"domain":"une.edu.au"
+		},
+		{
+			"name":"University of New South Wales ",
+			"domain":"unsw.edu.au"
+		},
+		{
+			"name":"University of Newcastle ",
+			"domain":"newcastle.edu.au"
+		},
+		{
+			"name":"University of Notre Dame ",
+			"domain":"nd.edu.au"
+		},
+		{
+			"name":"University of Queensland ",
+			"domain":"uq.edu.au"
+		},
+		{
+			"name":"University of South Australia ",
+			"domain":"unisa.edu.au"
+		},
+		{
+			"name":"University of Southern Queensland ",
+			"domain":"usq.edu.au"
+		},
+		{
+			"name":"University of Sydney ",
+			"domain":"sydney.edu.au"
+		},
+		{
+			"name":"University of Tasmania ",
+			"domain":"utas.edu.au"
+		},
+		{
+			"name":"University of Technology Sydney ",
+			"domain":"uts.edu.au"
+		},
+		{
+			"name":"University of the Sunshine Coast ",
+			"domain":"usc.edu.au"
+		},
+		{
+			"name":"University of Western Australia ",
+			"domain":"uwa.edu.au"
+		},
+		{
+			"name":"University of Wollongong ",
+			"domain":"uow.edu.au"
+		},
+		{
+			"name":"Victoria University ",
+			"domain":"vu.edu.au"
+		},
+		{
+			"name":"Western Sydney University ",
+			"domain":"uws.edu.au"
+		}
+	],
+	"uk":[
+		{
+			"name":"University of Aberdeen",
+			"domain":"abdn.ac.uk"
+		},
+		{
+			"name":"Aberystwyth University",
+			"domain":"aber.ac.uk"
+		},
+		{
+			"name":"Aston University",
+			"domain":"aston.ac.uk"
+		},
+		{
+			"name":"University of Bath",
+			"domain":"bath.ac.uk"
+		},
+		{
+			"name":"Queen's University Belfast",
+			"domain":"qub.ac.uk"
+		},
+		{
+			"name":"University of Birmingham",
+			"domain":"birmingham.ac.uk"
+		},
+		{
+			"name":"University of Bristol",
+			"domain":["bristol.ac.uk", "bris.ac.uk"]
+		},
+		{
+			"name":"Oxford Brookes University",
+			"domain":"brookes.ac.uk"
+		},
+		{
+			"name":"University of Cambridge",
+			"domain":"cam.ac.uk"
+		},
+		{
+			"name":"Cardiff University",
+			"domain":"cardiff.ac.uk"
+		},
+		{
+			"name":"University of Chester",
+			"domain":"chester.ac.uk"
+		},
+		{
+			"name":"University of Dundee",
+			"domain":"dundee.ac.uk"
+		},
+		{
+			"name":"Durham University",
+			"domain":"dur.ac.uk"
+		},
+		{
+			"name":"University of Edinburgh",
+			"domain":"ed.ac.uk"
+		},
+		{
+			"name":"University of Exeter",
+			"domain":"exeter.ac.uk"
+		},
+		{
+			"name":"University of Glasgow",
+			"domain":"gla.ac.uk"
+		},
+		{
+			"name":"University of Hull",
+			"domain":"hull.ac.uk"
+		},
+		{
+			"name":"Liverpool John Moores University",
+			"domain":"ljmu.ac.uk"
+		},
+		{
+			"name":"University of Kent",
+			"domain":"kent.ac.uk"
+		},
+		{
+			"name":"King's College London",
+			"domain":"kcl.ac.uk"
+		},
+		{
+			"name":"Lancaster University",
+			"domain":"lancaster.ac.uk"
+		},
+		{
+			"name":"University of Leeds",
+			"domain":"leeds.ac.uk"
+		},
+		{
+			"name":"University of Leicester",
+			"domain":"le.ac.uk"
+		},
+		{
+			"name":"University of Lincoln",
+			"domain":"lincoln.ac.uk"
+		},
+		{
+			"name":"University of Liverpool",
+			"domain":"liv.ac.uk"
+		},
+		{
+			"name":"University of London",
+			"domain":["lon.ac.uk","london.ac.uk"]
+		},
+		{
+			"name":"London School of Economics",
+			"domain":"lse.ac.uk"
+		},
+		{
+			"name":"Loughborough University",
+			"domain":"lboro.ac.uk"
+		},
+		{
+			"name":"University of Manchester",
+			"domain":"manchester.ac.uk"
+		},
+		{
+			"name":"Newcastle University",
+			"domain":"ncl.ac.uk"
+		},
+		{
+			"name":"Northumbria University",
+			"domain":"northumbria.ac.uk"
+		},
+		{
+			"name":"University of Nottingham",
+			"domain":["asap.ac.uk","nottingham.ac.uk"]
+		},
+		{
+			"name":"University of Oxford",
+			"domain":"ox.ac.uk"
+		},
+		{
+			"name":"Plymouth University",
+			"domain":"plymouth.ac.uk"
+		},
+		{
+			"name":"Queen Mary University of London",
+			"domain":"qmul.ac.uk"
+		},
+		{
+			"name":"The University of Reading",
+			"domain":"reading.ac.uk"
+		},
+		{
+			"name":"Royal Holloway, University of London",
+			"domain":"royalholloway.ac.uk"
+		},
+		{
+			"name":"School of Oriental and African Studies",
+			"domain":"soas.ac.uk"
+		},
+		{
+			"name":"University of Sheffield",
+			"domain":"sheffield.ac.uk"
+		},
+		{
+			"name":"University of Southampton",
+			"domain":"southampton.ac.uk"
+		},
+		{
+			"name":"University of Sussex",
+			"domain":"sussex.ac.uk"
+		},
+		{
+			"name":"Nottingham Trent University",
+			"domain":"ntu.ac.uk"
+		},
+		{
+			"name":"University of Central Lancashire",
+			"domain":"uclan.ac.uk"
+		},
+		{
+			"name":"University College London",
+			"domain":"ucl.ac.uk"
+		},
+		{
+			"name":"University of East Anglia",
+			"domain":"uea.ac.uk"
+		},
+		{
+			"name":"University of the West of England",
+			"domain":"uwe.ac.uk"
+		},
+		{
+			"name":"University of Warwick",
+			"domain":"warwick.ac.uk"
+		},
+		{
+			"name":"University of York",
+			"domain":"york.ac.uk"
+		}
+	]
+
+}
+

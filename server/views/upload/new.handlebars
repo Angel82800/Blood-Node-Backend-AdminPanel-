@@ -1,0 +1,67 @@
+<h2>test upload photo api</h2>
+<form action="{{{url 'upload.setPhoto'}}}" enctype="multipart/form-data" method="post">
+photo_url<input type="file" name="photo" />
+userid<input type="number" name="userid" />
+
+<input type="submit" value="Upload Image" name="submit">
+</form>
+
+<h2>test setprofilephoto api</h2>
+
+<form action="{{{url 'upload.setPhoto'}}}" method="post">
+<input type="number" name="userid" />
+<input type="number" name="photonum" />
+<input type="text" name="filename" />
+<input type="submit" value="UploadprofilePhoto" name="submit">
+</form>
+
+<h2>test getprofilephoto api</h2>
+
+<form action="{{{url 'upload.getprofilephoto'}}}" method="post">
+userID:<input type="number" name="userid" />
+Token:<input type="text" name="token" />
+<input type="submit" value="UploadprofilePhoto" name="submit">
+</form>
+
+
+<h2>test set Verify Image api</h2>
+
+<form action="{{{url 'upload.setverifyimg'}}}" method="post">
+<input type="number" name="userid" />
+<input type="number" name="type" />
+<input type="text" name="filename" />
+<input type="submit" value="UploadprofilePhoto" name="submit">
+</form>
+
+<form action="{{{url 'upload.verifyemail'}}}" method="post">
+<input type="email" name="email" />
+<input type="submit" value="verifyemail" name="submit">
+</form>
+
+<h2>test register</h2>
+
+<form action="api/register" method="post">
+email<input type="email" name="eamil" />
+password<input type="password" name="password"/>
+gender<input type="number" name="gender"/>
+<input type="submit" value="UploadprofilePhoto" name="submit">
+</form>
+<h1>test facebook get user info</h1>
+<form action="{{{url 'upload.facebook_user'}}}" method="post">
+<input type="text" name="facebook_id" />
+<input type="submit" value="get_user_detail" name="submit">
+</form>
+<div class="container">
+
+    <div class="jumbotron text-center">
+        <h1><span class="fa fa-lock"></span> Node Authentication</h1>
+
+        <p>Login or Register with:</p>
+
+        <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
+
+    </div>
+
+    
+
+</div>

@@ -1,0 +1,337 @@
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/admin/admin-lte/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/admin/admin-lte/js/owl-carousel/owl.carousel.js"></script>
+<script src="/admin/admin-lte/js/owl-carousel/owl.carousel.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+{{#extend 'styles'}}
+  <style>
+    .error {
+      color: red;
+    }
+    .success {
+      color: green;
+    }
+    .verifyImg{
+      width: 300px;
+      height: 300px;
+    }
+    .strech{
+      padding-left: 5;
+    }
+    .error {
+      color: red;
+    }
+    .success {
+      color: green;
+    }
+    .paddingLeft20{
+      padding-left:30px;
+    }
+    .paddingLeft10{
+      padding-left:10px;
+    }
+    .form-group{
+      margin-bottom: 15px!important;
+    }
+    .form-control-feedback
+    {
+      right:10px!important;
+    }
+    .photo_container
+    {
+      overflow: scroll;
+      max-width: 100%;  
+      max-height: 100%; 
+    }
+  </style>
+  <script type="text/javascript"></script>
+{{/extend}}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+    Show User
+    <small>Show user info</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="{{{url 'dashboard.v1'}}}"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li><a href="{{{url 'user.list'}}}">List</a></li>
+    <li class="active">Show User</li>
+  </ol>
+</section>
+<script type="text/javascript">
+
+      function setUrl(url){
+        document.getElementById('photo').src=url;
+      }
+      function setProfileUrl(data){
+        var url;
+        if (data=='profilePhotoURL'){
+          url = document.getElementById('profilePhotoURL').value;
+        }else if(data=="income_photo"){
+          url = document.getElementById('income_photo').value;
+        }else if (data=="education_photo"){
+          url = document.getElementById('education_photo').value;
+        }else if (data=="profession_photo"){
+          url = document.getElementById('profession_photo').value;  
+        }
+        document.getElementById('profile_verify_photo').src=url;
+      }
+</script>
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+  {{#if message}}
+        {{{message}}}
+  {{/if}}
+      
+    <div class="col-md-12">
+      <!-- Widget: user widget style 1 -->
+      <div class="box box-widget widget-user">
+        <!-- Add the bg color to the header using any of the bg-* classes -->
+        <div class="widget-user-header bg-aqua-active">
+          <h3 class="widget-user-username">{{crud_user.name}}</h3>
+          <a href="/crud/user/{{crud_user.id}}/edit" class="btn btn-sm btn-success">
+            <i class="glyphicon glyphicon-pencil"></i>
+            Edit
+          </a>
+          <a href="#" data-href="/crud/user/{{crud_user.id}}?_method=delete" class="btn btn-sm btn-danger delete">
+            <i class="glyphicon glyphicon-remove"></i>
+            Delete
+          </a>
+        </div>
+        <div class="widget-user-image">
+          <img class="img-circle" src="/admin/admin-lte/img/user1-128x128.jpg" alt="User Avatar">
+        </div>
+        <div class="box-footer">
+            <div class="form-group has-feedback col-sm-3 col-xs-12">
+                <label for="id">id:</label>
+                <input type="text" class="form-control" name="user[id]" placeholder="id" id="id" value="{{crud_user.id}}" >
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+             <div class="form-group has-feedback col-sm-3 col-xs-12">
+                <label for="email">email:</label>
+                <input type="text" class="form-control" name="user[email]" placeholder="email" id="email" value="{{crud_user.email}}" >
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback col-sm-3 col-xs-12">
+                <label for="latitude">location(latitude):</label>
+                <input type="text" class="form-control" name="user[latitude]" placeholder="latitude" id="email" value="{{crud_user.location.latitude}}" >
+                <span class="glyphicon glyphicon-map-marker form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback col-sm-3 col-xs-12">
+                <label for="longitude">location(longitude):</label>
+                <input type="text" class="form-control" name="user[longitude]" placeholder="longitude" id="email" value="{{crud_user.location.longitude}}" >
+                <span class="glyphicon glyphicon-map-marker form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback col-sm-3 col-xs-12">
+                <label for="age">age:</label>
+                <input type="number" class="form-control" name="user[age]" placeholder="age" id="age" value="{{crud_user.age}}" >
+                <span class="glyphicon glyphicon-paperclip form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback col-sm-3 col-xs-12">
+                <label for="gender">gender:</label>
+                <input type="text" class="form-control" name="user[gender]" placeholder="gender" id="gender" value="{{crud_user.gender}}" >
+                <span class="glyphicon glyphicon-paperclip form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback col-sm-3 col-xs-12">
+                <label for="income">income:</label>
+                <input type="number" class="form-control" name="user[income]" placeholder="income" id="income" value="{{crud_user.income}}" required/>
+                <span class="glyphicon glyphicon-usd form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback col-sm-3 col-xs-12">
+                <label for="currency_type">currency_type:</label>
+                <input type="type" class="form-control" name="user[currency_type]" placeholder="currency_type" id="currency_type" value="{{crud_user.currency_type}}" required/>
+                <span class="glyphicon glyphicon-usd form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback col-sm-6 col-xs-12">
+                <label for="school">school:</label>
+                <input type="text" class="form-control" name="user[school]" placeholder="school" value="{{crud_user.school}}" id="school" >
+                <span class="glyphicon glyphicon-education form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback col-sm-3 col-xs-12">
+                <label for="school_email">school email:</label>
+                <input type="text" class="form-control" name="user[school_email]" placeholder="school_email" value="{{crud_user.school_email}}" id="school_email" >
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group col-sm-3 col-xs-12">
+                <label for="school_type">school_type:</label>
+                <select class="form-control" name="user[school_type]" placeholder="school_type" id="school_type">
+                  <option value="" disabled selected>choose one</option>
+                  <option value="0">non-college</option>
+                  <option value="1">college</option>
+                  <option value="2">university</option>
+                </select>
+            </div>
+            <div class="form-group has-feedback col-sm-12 col-xs-12">
+                <label for="job">job:</label>
+                <input type="text" class="form-control" name="user[job]" placeholder="job" id="job" value="{{crud_user.job}}" >
+                <span class="glyphicon glyphicon-globe form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback col-sm-12 col-xs-12">
+                <label for="fcm_token">fcm_token:</label>
+                <input type="text" class="form-control" name="user[fcm_token]" placeholder="fcm_token" id="fcm_token" value="{{crud_user.fcm_token}}" >
+                <span class="glyphicon glyphicon-globe form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback col-sm-6 col-xs-6">
+                <label for="match_time">match_time:</label>
+                <input type="text" class="form-control" name="user[match_time]" placeholder="match_time" id="match_time" value="{{match.time}}" >
+                <span class="glyphicon glyphicon-globe form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback col-sm-6 col-xs-6">
+                <label for="match_user">match_user:</label>
+                <input type="text" class="form-control" name="user[match_user]" placeholder="match_user" id="match_user" value="{{match.matched_user}}" >
+                <span class="glyphicon glyphicon-globe form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback col-sm-12 col-xs-12">
+                <label for="match_result">match_result:</label>
+                <input type="text" class="form-control" name="user[match_result]" placeholder="match_result" id="match_result" value="{{match.matched_info}}" >
+                <span class="glyphicon glyphicon-globe form-control-feedback"></span>
+            </div>
+            <!-- /.col -->
+            <div class="form-group col-sm-12 col-xs-12">
+              <label for="photos">photos:</label>
+              {{#each crud_user.photos}}
+              <br>
+              <div class="input-group">
+                <!-- <label for="photos">photos:</label> -->
+                <input type="text" class="form-control" name="user[photo_{{@index}}]" placeholder="photo_url" id="photo_{{@index}}" value="{{this}}" >
+                <span class="input-group-btn">
+                  <button id="button_{{@index}}" onclick="setUrl('{{this}}')" class="btn btn-success" type="button" data-toggle="modal" data-target="#myPhoto">show!</button>
+                </span>
+              </div>
+              {{/each}}
+            </div>
+            <div class="form-group col-sm-12 col-xs-12">
+              <label for="income_photo">verify income photo:</label>
+              <div class="input-group col-sm-12">
+                <input type="text" class="form-control" name="user[income_photo]" placeholder="income_photo" id="income_photo" value="{{verifyImgURL.income}}" >
+                <span class="input-group-btn">
+                  <button class="btn btn-success" type="button" onclick="setProfileUrl('income_photo')" data-toggle="modal" data-target="#myModal">show!</button>
+                  <input id="income_verify" {{income_verified}} name="user[income_verified]" type="checkbox" data-toggle="toggle">
+                </span>
+              </div>
+            </div>
+            <div class="form-group col-sm-12 col-xs-12">
+              <label for="profession_photo">verify profession photo:</label>
+              <div class="input-group col-sm-12">
+                <input type="text" class="form-control" name="user[profession_photo]" placeholder="profession_photo" id="profession_photo" value="{{verifyImgURL.profession}}" >
+                <span class="input-group-btn">
+                  <button class="btn btn-success" type="button" onclick="setProfileUrl('profession_photo')" data-toggle="modal" data-target="#myModal">show!</button>
+                  <input id="profession_verify" {{profession_verified}} type="checkbox" data-toggle="toggle" name="user[profession_verify]">
+                </span>
+              </div>
+            </div>
+            <div class=" form-group col-sm-12 col-xs-12">
+              <label for="education_photo">verify education photo:</label>
+              <div class="input-group col-sm-12">
+                <input type="text" class="form-control" name="user[education_photo]" placeholder="education_photo" id="education_photo" value="{{verifyImgURL.education}}" >
+                <span class="input-group-btn">
+                  <button class="btn btn-success" type="button" onclick="setProfileUrl('education_photo')" data-toggle="modal" data-target="#myModal">show!</button>
+                  <input id="education_verify" {{education_verified}} type="checkbox" data-toggle="toggle" name='user[education_verify]'>
+                </span>
+              </div>
+            </div>
+            <div class="form-group has-feedback col-sm-12 col-xs-12">
+                <label for="about">about:</label>
+                <textarea class="form-control" value="{{crud_user.about}}" rows="2" id="about" name="user[about]" >{{crud_user.about}}</textarea>
+            </div>
+        </div>
+      </div>
+    </div>
+      <!-- /.widget-user -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">{{crud_user.name}}</h4>
+      </div>
+      <div class="modal-body">
+        <div class=".photo_container">
+          <img id="profile_verify_photo" width="100%" height="100%">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myPhoto" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">{{crud_user.name}}</h4>
+      </div>
+      <div class="modal-body">
+        <div class=".photo_container">
+          <img id="photo" width="100%" height="100%">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- /.col -->
+      <!-- <div class="col-md-12 box box-primary">
+        <div class="form-group col-sm-4 col-xs-12">
+           <label for="income" class="col-form-label">income:</label>
+           <img id="income" class="verifyImg" src="{{verifyImgURL.income}}" alt="income">
+           <div class="row" style="margin-top:5px">
+              <label for="income_verify" class="col-form-label">income verify:</label>
+              <input id="income_verify" type="checkbox" data-toggle="toggle">
+           </div>
+        </div>
+        <div class="form-group col-sm-4 col-xs-12">
+           <label for="profession" class="col-form-label">profession:</label>
+           <img id="profession" class="verifyImg" src="{{verifyImgURL.profession}}" alt="profession">
+           <div class="row" style="margin-top:5px">
+              <label for="profession_verify" class="col-form-label">profession verify:</label>
+              <input id="profession_verify" type="checkbox" data-toggle="toggle">
+           </div>
+        </div>
+        <div class="form-group col-sm-4 col-xs-12">
+           <label for="education" class="col-form-label">education:</label>
+           <img id="education" class="verifyImg" src="{{verifyImgURL.education}}" alt="education">
+           <div class="row" style="margin-top:5px">
+              <label for="education_verify" class="col-form-label">education verify:</label>
+              <input id="education_verify" type="checkbox" data-toggle="toggle">
+           </div>
+        </div>
+      </div>     -->
+ 
+  </div>
+</section>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+    <!-- MAIN SCRIPT -->
+
+<!-- /.section -->
+{{#extend 'scripts'}}
+  <script>
+    (function($) {
+      // Delete user button
+      $('.btn-danger.delete').click(function(event) {
+        event.preventDefault();
+
+        var uri = $(this).attr('data-href');
+        
+        if (confirm('¿Desea eliminar el usuario?')) {
+          $.post(uri, function(response) {
+            window.location.href = '/crud/users';
+          });
+        }
+      });
+    })(jQuery)
+  </script>
+{{/extend}}
